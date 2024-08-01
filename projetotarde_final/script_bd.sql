@@ -124,8 +124,10 @@ CREATE TABLE diariobordo (
     id int PRIMARY KEY auto_increment,
     texto text NOT NULL,
     datahora datetime,
-    fk_aluno_id int
+    fk_aluno_id int NOT NULL
 );
+SHOW tables;
+
  
 ALTER TABLE diariobordo ADD CONSTRAINT FK_diariobordo_2
     FOREIGN KEY (fk_aluno_id)
@@ -160,3 +162,90 @@ ON
 -- Com o nome de projetofinal_tarde.
 -- instrutor.romulo@gmail.com
 
+INSERT aluno(ra) VALUES ('00174292');
+SELECT *FROM aluno;
+
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id)
+VALUES ('Na Aula de hoje abordamos sobre o INSERT em SQL, para inserir e alterar o registro acadêmico (RA) e finalizamos com o estudo do uso de JOIN, FROM e ON ', '2024-07-31 17:50:00 ', 154 );
+SELECT *FROM diariobordo;
+
+
+-- Exercício
+-- Modelo Conceitual - crie uma nova entidade chamada avaliação
+
+-- id pk
+-- nota 1 int
+-- nota 2 int
+-- nota 3 int
+-- nota 4 int
+-- fk_aluno_id
+
+
+-- Modelo Lógico
+-- Modelo Físico (brModelo)
+-- INSERTS de 5 alunos com as notas
+-- SELECT *FROM avaliacao;
+-- SELECT JOIN: tabela aluno com tabela avaliacao.
+
+
+
+
+
+-- novoprojetologico_avaliacao:
+
+
+
+CREATE TABLE avaliacao (
+    id INT PRIMARY KEY auto_increment,
+    nota1 int,
+    nota2 int,
+    nota3 int,
+    nota4 int
+);
+
+CREATE TABLE registra_diariobordo_aluno_avaliacao (
+    fk_diariobordo_id INT,
+    fk_aluno_id INT,
+    fk_avaliacao_id INT
+);
+ 
+ALTER TABLE registra_diariobordo_aluno_avaliacao ADD CONSTRAINT FK_registra_diariobordo_aluno_avaliacao_1
+    FOREIGN KEY (fk_diariobordo_id)
+    REFERENCES diariobordo (id)
+    ON DELETE NO ACTION;
+ 
+ALTER TABLE registra_diariobordo_aluno_avaliacao ADD CONSTRAINT FK_registra_diariobordo_aluno_avaliacao_2
+    FOREIGN KEY (fk_aluno_id)
+    REFERENCES aluno (id)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE registra_diariobordo_aluno_avaliacao ADD CONSTRAINT FK_registra_diariobordo_aluno_avaliacao_3
+    FOREIGN KEY (fk_avaliacao_id)
+    REFERENCES avaliacao (id)
+    ON DELETE NO ACTION;
+    
+INSERT INTO avaliacao (nota1, nota2, nota3, nota4, fk_aluno_id)
+VALUES
+(19, 25, 20, 15, 103 ), 
+(13, 18, 12, 24, 104), 
+(10, 20, 18, 25, 105), 
+(17, 13, 19, 21, 106), 
+(09, 23, 16, 22, 107) 
+;
+-- Mostrando a tabela avaliaçao
+SELECT *FROM avaliacao;
+
+SELECT
+	v.id,
+    v.nota1,
+    v.nota2,
+    v.nota3,
+    v.nota4,
+    a.ra as registro_academico
+    
+FROM
+   avaliacao as v
+JOIN
+	aluno as a
+ON
+	v.fk_aluno_id = a.id;
