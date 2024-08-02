@@ -196,33 +196,23 @@ SELECT *FROM diariobordo;
 
 
 CREATE TABLE avaliacao (
-    id INT PRIMARY KEY auto_increment,
+    id int PRIMARY KEY auto_increment,
     nota1 int,
     nota2 int,
     nota3 int,
-    nota4 int
-);
-
-CREATE TABLE registra_diariobordo_aluno_avaliacao (
-    fk_diariobordo_id INT,
-    fk_aluno_id INT,
-    fk_avaliacao_id INT
+    nota4 int,
+    fk_aluno_id int NOT NULL
 );
  
-ALTER TABLE registra_diariobordo_aluno_avaliacao ADD CONSTRAINT FK_registra_diariobordo_aluno_avaliacao_1
-    FOREIGN KEY (fk_diariobordo_id)
-    REFERENCES diariobordo (id)
-    ON DELETE NO ACTION;
+ALTER TABLE diariobordo ADD CONSTRAINT FK_diariobordo_2
+    FOREIGN KEY (fk_aluno_id)
+    REFERENCES aluno (id)
+    ON DELETE CASCADE;
  
-ALTER TABLE registra_diariobordo_aluno_avaliacao ADD CONSTRAINT FK_registra_diariobordo_aluno_avaliacao_2
+ALTER TABLE avaliacao ADD CONSTRAINT FK_avaliacao_2
     FOREIGN KEY (fk_aluno_id)
     REFERENCES aluno (id)
     ON DELETE RESTRICT;
- 
-ALTER TABLE registra_diariobordo_aluno_avaliacao ADD CONSTRAINT FK_registra_diariobordo_aluno_avaliacao_3
-    FOREIGN KEY (fk_avaliacao_id)
-    REFERENCES avaliacao (id)
-    ON DELETE NO ACTION;
     
 INSERT INTO avaliacao (nota1, nota2, nota3, nota4, fk_aluno_id)
 VALUES
