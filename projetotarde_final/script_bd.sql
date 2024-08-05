@@ -188,9 +188,6 @@ SELECT *FROM diariobordo;
 -- SELECT JOIN: tabela aluno com tabela avaliacao.
 
 
-
-
-
 -- novoprojetologico_avaliacao:
 
 
@@ -214,6 +211,12 @@ ALTER TABLE avaliacao ADD CONSTRAINT FK_avaliacao_2
     REFERENCES aluno (id)
     ON DELETE RESTRICT;
     
+ALTER TABLE aluno ADD COLUMN nome VARCHAR(80);
+ALTER TABLE aluno ADD COLUMN Tempo_de_estudo INT NOT NULL;
+ALTER TABLE aluno  ADD COLUMN rendafamiliar DECIMAL(10,2);
+DESCRIBE aluno;
+SELECT *FROM aluno;
+    
 INSERT INTO avaliacao (nota1, nota2, nota3, nota4, fk_aluno_id)
 VALUES
 (19, 25, 20, 15, 103 ), 
@@ -223,7 +226,7 @@ VALUES
 (09, 23, 16, 22, 107) 
 ;
 -- Mostrando a tabela avaliaçao
-SELECT *FROM avaliacao;
+SELECT * FROM aluno;
 
 SELECT
 	v.id,
@@ -239,3 +242,76 @@ JOIN
 	aluno as a
 ON
 	v.fk_aluno_id = a.id;
+
+SHOW TABLES;    
+
+SELECT *FROM aluno;
+SELECT *FROM aluno ORDER BY id DESC LIMIT 1;
+INSERT aluno(ra, nome, tempo_de_estudo, rendafamiliar)
+VALUES ('00034527', 'Juarez', 1, 4567.98);
+
+-- Inserindo 50 alunos na tabela 'aluno'
+describe aluno;
+
+alter table aluno
+
+ALTER TABLE aluno
+DROP COLUMN tempoestudo;
+
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034546', 'Ana', 3, 1234.56);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034800', 'Ana', 3, 1234.56);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034801', 'Bruno', 4, 1500.75);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034802', 'Carla', 2, 987.65);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034803', 'David', 5, 1345.90);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034804', 'Elaine', 3, 1123.45);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034805', 'Fábio', 6, 1587.34);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034806', 'Gabriela', 4, 1300.00);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034807', 'Hugo', 2, 980.20);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034808', 'Isabela', 3, 1050.40);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034809', 'João', 5, 1420.60);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034810', 'Karina', 4, 1250.75);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034811', 'Lúcio', 6, 1600.80);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034812', 'Mariana', 2, 950.30);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034813', 'Nicolas', 3, 1100.25);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034814', 'Olivia', 4, 1200.90);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034815', 'Pedro', 5, 1400.55);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034816', 'Quésia', 3, 1080.60);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034817', 'Ricardo', 4, 1320.10);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034818', 'Sofia', 6, 1450.25);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034819', 'Tiago', 2, 970.75);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034820', 'Ursula', 3, 1090.50);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034821', 'Vinícius', 5, 1370.80);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034822', 'Wanda', 4, 1260.45);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034823', 'Xuxa', 6, 1550.30);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034824', 'Yuri', 2, 940.10);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034825', 'Zara', 3, 1130.25);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034826', 'André', 4, 1400.55);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034827', 'Beatriz', 5, 1270.90);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034828', 'Carlos', 6, 1650.70);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034829', 'Daniela', 2, 960.30);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034830', 'Eduardo', 3, 1070.90);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034831', 'Fernanda', 4, 1210.45);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034832', 'Gabriel', 5, 1390.25);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034833', 'Helena', 6, 1500.00);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034834', 'Igor', 2, 950.90);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034835', 'Jéssica', 3, 1110.35);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034836', 'Kleber', 4, 1270.65);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034837', 'Larissa', 5, 1360.85);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034838', 'Marcelo', 6, 1480.10);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034839', 'Natália', 2, 970.60);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034840', 'Otávio', 3, 1060.55);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034841', 'Paula', 4, 1290.35);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034842', 'Quintino', 5, 1380.75);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034843', 'Rafaela', 6, 1530.20);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034844', 'Samuel', 2, 960.40);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034845', 'Tatiane', 3, 1080.75);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034846', 'Uanderson', 4, 1240.85);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034847', 'Viviane', 5, 1450.90);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034848', 'William', 6, 1570.10);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034849', 'Ximena', 2, 940.80);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034850', 'Yasmin', 3, 1120.90);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034851', 'Zé', 4, 1230.45);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034852', 'Amanda', 5, 1370.60);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034853', 'Breno', 6, 1550.80);
+INSERT INTO aluno (ra, nome, tempo_de_estudo, rendafamiliar) VALUES ('00034854', 'Clara', 2, 920.70);
+
