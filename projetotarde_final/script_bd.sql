@@ -138,6 +138,69 @@ SHOW tables;
 
 INSERT INTO diariobordo (texto, datahora, fk_aluno_id)
 VALUES ('Estudo de DataScience - Revisão de Introdução ao SQL', '2024-07-31 15:55:00 ', 103 );
+
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo de estatística para ciência de dados', '2024-07-31 13:00:00', 104);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de codificação em R', '2024-07-31 14:15:00', 105);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Análise de dados com Pandas', '2024-07-31 15:30:00', 106);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Exploração de bibliotecas de visualização', '2024-07-31 16:45:00', 107);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Introdução a algoritmos de clustering', '2024-08-01 08:00:00', 108);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo de técnicas de regressão', '2024-08-01 09:30:00', 109);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Implementação de redes neurais', '2024-08-01 10:45:00', 110);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Análise de casos de uso de DataScience', '2024-08-01 12:00:00', 111);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de métodos de validação de modelo', '2024-08-01 13:30:00', 112);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Prática com conjuntos de dados do Kaggle', '2024-08-01 14:45:00', 113);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo de técnicas de feature engineering', '2024-08-01 16:00:00', 114);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de bibliotecas de machine learning', '2024-08-02 08:00:00', 115);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de limpeza e pré-processamento de dados', '2024-08-02 09:30:00', 116);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Exploração de modelos de classificação', '2024-08-02 10:45:00', 117);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo sobre métricas de desempenho', '2024-08-02 12:00:00', 118);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Implementação de validação cruzada', '2024-08-02 13:30:00', 119);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Análise de gráficos de dispersão', '2024-08-02 14:45:00', 120);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Prática com modelos de regressão linear', '2024-08-02 16:00:00', 121);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Exploração de algoritmos de otimização', '2024-08-03 08:00:00', 122);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de modelagem preditiva', '2024-08-03 09:30:00', 123);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de técnicas de ensemble', '2024-08-03 10:45:00', 124);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Análise de resultados de modelos', '2024-08-03 12:00:00', 125);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo sobre redes neurais profundas', '2024-08-03 13:30:00', 126);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Implementação de PCA', '2024-08-03 14:45:00', 127);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Exploração de técnicas de balanceamento de dados', '2024-08-03 16:00:00', 128);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de ajuste de hiperparâmetros', '2024-08-04 08:00:00', 129);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo de algoritmos de decisão', '2024-08-04 09:30:00', 130);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Análise de resultados de testes A/B', '2024-08-04 10:45:00', 131);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de algoritmos de otimização', '2024-08-04 12:00:00', 132);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Implementação de redes neurais convolucionais', '2024-08-04 13:30:00', 133);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Exploração de técnicas de regularização', '2024-08-04 14:45:00', 134);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de análise de texto', '2024-08-04 16:00:00', 135);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo sobre modelos generativos', '2024-08-05 08:00:00', 136);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de técnicas de análise de sentimentos', '2024-08-05 09:30:00', 137);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Prática com redes neurais recorrentes', '2024-08-05 10:45:00', 138);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Análise de dados de séries temporais', '2024-08-05 12:00:00', 139);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de modelagem com TensorFlow', '2024-08-05 13:30:00', 140);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de conceitos de machine learning', '2024-08-05 14:45:00', 141);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo sobre algoritmos de busca', '2024-08-05 16:00:00', 142);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Implementação de modelos de recomendação', '2024-08-06 08:00:00', 143);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de validação de modelos preditivos', '2024-08-06 09:30:00', 144);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Análise de dados com Seaborn', '2024-08-06 10:45:00', 145);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo sobre técnicas de visualização interativa', '2024-08-06 12:00:00', 146);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de métodos de inferência estatística', '2024-08-06 13:30:00', 147);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Prática com algoritmos de recomendação colaborativa', '2024-08-06 14:45:00', 148);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Exploração de técnicas de otimização de hiperparâmetros', '2024-08-06 16:00:00', 149);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de análise de dados com SQL', '2024-08-07 08:00:00', 150);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo de métodos de amostragem', '2024-08-07 09:30:00', 151);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de modelos probabilísticos', '2024-08-07 10:45:00', 152);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Análise de algoritmos de classificação', '2024-08-07 12:00:00', 164);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Implementação de técnicas de feature selection', '2024-08-07 13:30:00', 154);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Exploração de dados com Plotly', '2024-08-07 14:45:00', 155);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo de técnicas de análise multivariada', '2024-08-07 16:00:00', 156);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de desenvolvimento de projetos em DataScience', '2024-08-08 08:00:00', 157);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Revisão de conceitos de mineração de dados', '2024-08-08 09:30:00', 158);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo sobre análise de redes sociais', '2024-08-08 10:45:00', 159);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Prática com algoritmos de otimização estocástica', '2024-08-08 12:00:00', 160);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Exploração de técnicas de análise espacial', '2024-08-08 13:30:00', 161);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Sessão de análise de desempenho de modelos', '2024-08-08 14:45:00', 162);
+INSERT INTO diariobordo (texto, datahora, fk_aluno_id) VALUES ('Estudo de conceitos avançados em machine learning', '2024-08-08 16:00:00', 163);
+
+
 -- Mostrando a tabela diariobordo
 SELECT *FROM diariobordo;
 
