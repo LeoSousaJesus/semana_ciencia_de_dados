@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+}
+h1, label{
+    color:white;
+}
+tr, th{
+    color: white;
+}
